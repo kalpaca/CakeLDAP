@@ -15,7 +15,7 @@ http://book.cakephp.org/3.0/en/controllers/components/authentication.html#creati
 
 3. after a match, we use ldap_get_dn to get the 'dn' attribute for this user 
 
-4. we use this 'password' from first step and 'dn' to bind again and validate the user
+4. we use the 'password' from first step and 'dn' from previous step to bind again and validate the user
 
 ## Configuration
 
