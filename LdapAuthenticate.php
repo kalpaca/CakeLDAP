@@ -26,14 +26,7 @@ use Cake\Network\Response;
  *
  * ### Using LDAP auth
  *
- * In your controller's components array, add auth + the required config
- * ```
- * public $components = [
- * 'Auth' => [
- * 'authenticate' => ['Ldap']
- * ]
- * ];
- * ```
+ * Please read the README.md file first !
  */
 class LdapAuthenticate extends BaseAuthenticate {
 	
