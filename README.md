@@ -9,13 +9,13 @@ http://book.cakephp.org/3.0/en/controllers/components/authentication.html#creati
 
 ## Workflow:
 
-1. user input 'username' and 'password' fields and send request to controller.
+1. user input 'username' and 'password' fields and send request to controller
 
-2. this adapter use a service account to do @ldap_bind() and then search for login user name
+2. this adapter use a service account to do @ldap_bind() and then search for login 'username'
 
-3. use ldap_get_dn to get the 'dn' attribute for this user 
+3. after a match, use ldap_get_dn to get the 'dn' attribute for this user 
 
-4. Then use this 'password' from first step and 'dn' to bind again and validate the user.
+4. use this 'password' from first step and 'dn' to bind again and validate the user
 
 ## Configuration
 
