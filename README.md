@@ -63,11 +63,11 @@ config/app.php:
      * @link http://php.net/manual/en/function.ldap-search.php - for more info on ldap search
      */
 	'Ldap' => [
-			'host' => 'LDAP.SOMETHING.SOMEROOT.NET',
+			'host' => 'SOMESERVER.SOMEROOT.NET',
 			'port' => 636, /** ldaps:// port */
 			'version' => 3,
-			'baseDN' => 'DC=YOURDC,DC=YOURROOT,DC=NET',
-			'bindAccount' => 'CN=XXX,OU=ORG,DC=YOURDC,DC=YOURROOT,DC=NET',
+			'baseDN' => 'DC=SOMETHING,DC=YOUR_ROOT,DC=YOUR_NET',
+			'bindAccount' => 'CN=YOUR_LOGIN,OU=YOUR_ORG,DC=SOMETHING,DC=YOUR_ROOT,DC=YOUR_NET',
 			'bindPassword' => 'PASSWORD',
             'filter'=>function($username) {
 				return "(|(sn=*$username*)(givenname=*$username*)(sAMAccountName=*$username*)(displayname=*$username*))";
