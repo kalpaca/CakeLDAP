@@ -1,12 +1,12 @@
 <?php
 
 /**
- *
  * Licensed under The MIT License
  *
  * @link          https://github.com/kalpaca/CakeLDAP
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
+ 
 namespace App\Auth;
 
 use Cake\Core\Configure;
