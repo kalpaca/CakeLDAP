@@ -5,7 +5,7 @@ http://book.cakephp.org/3.0/en/controllers/components/authentication.html#creati
 
 ## Configuration
 
-This is a LDAP 3 authentication adapter for CakePHP 3.0, using "dn" and "password" to do @ldap_bind()
+This is a LDAP 3 authentication adapter for CakePHP 3.0, using a service account to do @ldap_bind() and then search for login user name and his dn on LDAP server, if there is a match, then we will use this dn and password to bind again and validate the user.
 
 Put LdapAuthenticate.php into cakephp_project_root\src\Auth folder, and then setup the following settings.
 
