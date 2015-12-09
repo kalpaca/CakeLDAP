@@ -69,10 +69,7 @@ config/app.php:
      * - baseDN - The base DN for directory
      * - filter - The attribute to search against. 
      * - return - The attributes to return'
-     * - errors - Array of errors where key is the error and the value is the error
-     *    message. Set in session to Flash.ldap for flashing
-     *
-     * @link http://php.net/manual/en/function.ldap-search.php - for more info on ldap search
+     * - errors - Array of errors where key is the error and the value is the error message. 
      */
 	'Ldap' => [
 			'host' => 'SOMESERVER.SOMEROOT.NET',
