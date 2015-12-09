@@ -1,6 +1,6 @@
 # CakeLDAP
 
-Active Directory LDAP v3 authentication adapter for CakePHP 3.x, 
+Active Directory LDAP v3 authentication adapter for CakePHP 3.x
 
 
 ## Reference Knowledge
