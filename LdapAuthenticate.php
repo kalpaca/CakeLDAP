@@ -63,15 +63,11 @@ class LdapAuthenticate extends BaseAuthenticate {
 		$this->_config ['return'] = Configure::read ( 'Ldap.return' );
 		$this->_config ['errors'] = Configure::read ( 'Ldap.errors' );
 		
-		if (isset ( $this->_config ['host'] ) && is_object ( $this->_config ['host'] ) && ($this->_config ['host'] instanceof \Closure)) {
-			$this->_config ['host'] = $config ['host'] ();
-		}
-		
 		if (empty ( $this->_config ['host'] )) {
 			throw new InternalErrorException ( 'LDAP Server not specified!' );
 		}
 		
-		if (empty ( $config ['port'] )) {
+		if (empty ( $this->_config ['port'] )) {
 			$this->_config ['port'] = null;
 		}
 		
