@@ -66,7 +66,6 @@ class LdapAuthenticate extends BaseAuthenticate {
 		if (empty ( $this->_config ['host'] )) {
 			throw new InternalErrorException ( 'LDAP Server not specified!' );
 		}
-		
 		if (empty ( $this->_config ['port'] )) {
 			$this->_config ['port'] = null;
 		}
