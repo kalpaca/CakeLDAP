@@ -89,7 +89,6 @@ class LdapAuthenticate extends BaseAuthenticate {
 	 */
 	function disconnect() {
 		@ldap_unbind ( $this->ldapConnection );
-		@ldap_close ( $this->ldapConnection );
 	}
 	/**
 	 * connect ldap connection
