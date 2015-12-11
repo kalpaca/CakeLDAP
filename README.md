@@ -3,11 +3,11 @@
 Active Directory LDAP v3 authentication adapter for CakePHP 3.x
 
 
-## Reference Knowledge
+## Reference
 
 http://book.cakephp.org/3.0/en/controllers/components/authentication.html#creating-custom-authorize-objects
 
-## Workflow:
+## Workflow
 
 1. user inputs 'username' and 'password' fields and send request to controller
 
